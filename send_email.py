@@ -7,7 +7,7 @@ port = 465
 
 
 username = "osanchez.python@gmail.com"
-password = "dhmu kggi jrzh azje"
+
 
 receiver = "osanchez.python@gmail.com"
 context = ssl.create_default_context()
