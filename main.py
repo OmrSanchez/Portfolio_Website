@@ -1,11 +1,12 @@
 import streamlit as st
+import pandas
 
 st.set_page_config(layout='wide')
 
 col1, col2 = st.columns(2, vertical_alignment="top")
 
 with col1:
-	st.image("images/photo.jpg", width=700)
+	st.image("images/photo.jpg", width=400)
 
 with col2:
 	st.title("Omar D. Sanchez")
@@ -25,3 +26,21 @@ body_text = """
 	Below you can find some of the apps I have built in Python. Feel free to contact me!
 	"""
 st.write(body_text)
+
+df = pandas.read_csv("data.csv", sep=";")
+col3, col_empty, col4 = st.columns([1.5, 0.5, 1.5])
+
+with col3:
+	for index, row in df[:10].iterrows():
+		st.header(row['title'])
+		st.write(row["description"])
+		st.image("images/" + row["image"])
+		st.write("[Source Code]({row['url']})")
+
+with col4:
+	for index, row in df[10:].iterrows():
+		st.header(row["title"])
+		st.write(row["description"])
+		st.image("images/" + row["image"])
+		st.write("[Source Code]({row['url']})")
+
