@@ -10,15 +10,13 @@ st.set_page_config(
 
 csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
 
-
-
 st.header("Python Projects")
 
 df = pandas.read_csv(csv_path, sep=";")
 col3, col4 = st.columns(2)
 
 with col3:
-	for index, row in df[:3].iterrows():
+	for index, row in df[:5].iterrows():
 		with st.container(border=True):
 			st.header(row['title'])
 			st.write(row["description"])
@@ -27,7 +25,7 @@ with col3:
 			st.write(f"[Source Code]({row['url']})")
 
 with col4:
-	for index, row in df[3:].iterrows():
+	for index, row in df[5:].iterrows():
 		with st.container(border=True):
 			st.header(row["title"])
 			st.write(row["description"])
