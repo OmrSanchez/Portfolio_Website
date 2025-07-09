@@ -16,15 +16,16 @@ with col1:
 
 with col2:
 	st.title("Omar D. Sanchez")
+	st.subheader("Network & Automation Engineer | USMC Veteran")
 	content = """
-	Network Engineer and Marine Corps Veteran with over 9 years of experience and an active Secret clearance. Specializes in designing, 
-	implementing, and securing complex, multi-protocol DoD network infrastructures. Proven expertise in multivendor environments (Cisco, VMWare), 
-	advanced routing (BGP/OSPF), and leveraging automation (Python/Ansible) to enhance network performance. IAT Level II compliant (Security+), 
-	with CCNA and DevNet certifications.
+	Highly motivated and results-driven with over 9 years of experience designing,
+        securing, and automating complex DoD network infrastructures.
 	"""
 
 	st.info(content)
-
+	st.write(
+		"[🔗 LinkedIn](https://linkedin.com/in/os-networks) | "
+		"[🐙 GitHub](https://github.com/OmrSanchez)"
 body_text = """
 	Below you can find some of the apps I have built in Python. Feel free to contact me! Test TEXT
 	"""
