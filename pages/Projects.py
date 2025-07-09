@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas
 
-df = pandas.read_csv("data.csv", sep=";")
+df = pandas.read_csv("../data.csv", sep=";")
 col3, col4 = st.columns([1.5, 1.5])
 
 with col3:
