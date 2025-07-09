@@ -14,7 +14,7 @@ with col1:
 	st.image("images/photo.jpg", width=400)
 
 with col2:
-	# st.title("Omar D. Sanchez")
+	st.title("Omar D. Sanchez")
 	content = """
 	Network Engineer and Marine Corps Veteran with over 9 years of experience and an active Secret clearance. Specializes in designing, 
 	implementing, and securing complex, multi-protocol DoD network infrastructures. Proven expertise in multivendor environments (Cisco, VMWare), 
