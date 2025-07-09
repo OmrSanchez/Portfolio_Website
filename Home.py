@@ -61,6 +61,29 @@ st.subheader("Featured Projects")
 st.write("A selection of projects that showcase my skills in automation and application development. *(More projects available on the 'Projects' page)*")
 st.write("")
 
+proj_col1, proj_col2, proj_col3 = st.columns(3)
+
+# Project Card 1
+with proj_col1:
+    with st.container(border=True):
+        st.subheader("Network API Automation")
+        st.write("Python scripts utilizing REST APIs to automate monitoring and configuration tasks for Cisco Meraki and DevNet sandboxes.")
+        # When you create your projects page, you'll link to it here
+        st.link_button("View Project Details", "#") # Placeholder link
+
+# Project Card 2
+with proj_col2:
+    with st.container(border=True):
+        st.subheader("PDF Invoice Generator")
+        st.write("Practical automation script that parses Excel data to programmatically generate PDF invoices, saving significant manual effort.")
+        st.link_button("View Project Details", "#") # Placeholder link
+
+# Project Card 3
+with proj_col3:
+    with st.container(border=True):
+        st.subheader("Password Manager GUI")
+        st.write("A secure, user-friendly desktop application built with Python, TKinter, and the MVC design pattern for local password management.")
+        st.link_button("View Project Details", "#") # Placeholder link
 
 # df = pandas.read_csv("data.csv", sep=";")
 # col3, col4 = st.columns([1.5, 1.5])
