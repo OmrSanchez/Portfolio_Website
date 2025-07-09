@@ -11,7 +11,7 @@ col1, col2 = st.columns([0.4, 0.6], gap="Large")
 
 with col1:
 	profile_pic = "images/photo.jpg"
-	st.image(profile_pic, width=400, caption='Omar Sanchez')
+	st.image(profile_pic, width=250, caption='Omar Sanchez')
 
 with col2:
 	st.title("Omar D. Sanchez")
