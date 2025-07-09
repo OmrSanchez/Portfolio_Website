@@ -11,7 +11,7 @@ st.set_page_config(
 col1, col2 = st.columns(2, vertical_alignment="top")
 
 with col1:
-	profile_pic = Image.open("images/photo.jpg")
+	profile_pic = "images/photo.jpg"
 	st.image(profile_pic, width=400, caption='Omar Sanchez')
 
 with col2:
