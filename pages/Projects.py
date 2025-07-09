@@ -2,7 +2,7 @@ import streamlit as st
 import pandas
 from pathlib import Path
 
-csv_path = Path(__file__).parent.parent / '..data.csv'
+csv_path = Path(__file__).parent.parent / 'data.csv'
 
 
 df = pandas.read_csv(csv_path, sep=";")
