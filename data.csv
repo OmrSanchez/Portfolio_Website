@@ -4,3 +4,4 @@ Portfolio Website;A website built entirely in Python to showcase coding projects
 FlashCards;"A flashcard app built in Python. Minimal functionality built in. MVC design pattern used with Tkinter as the GUI.
 Goal: Practice working with csv data using the Pandas module.";https://github.com/OmrSanchez/FlashCards.git;3.png
 Password Manager;"A password manager built in Python. Support password generation and login search and lookup. MVC and Tkinter.
+Goal: Learn data structures and manipulation using the pandas module, reading from and saving to files. ";https://github.com/OmrSanchez/Password-Manager-GUI-MVC-TKinter.git;4.png
