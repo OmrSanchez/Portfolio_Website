@@ -25,7 +25,7 @@ with col2:
 	st.info(content)
 
 body_text = """
-	Below you can find some of the apps I have built in Python. Feel free to contact me!
+	Below you can find some of the apps I have built in Python. Feel free to contact me! Test TEXT
 	"""
 st.write(body_text)
 
