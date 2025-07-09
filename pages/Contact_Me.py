@@ -1,8 +1,11 @@
 import streamlit as st
 from send_email import send_email
 import pandas
+from pathlib import Path
 
-df = pandas.read_csv("../topics.csv")
+csv_path = Path(__file__).parent.parent / 'topics.csv'
+
+df = pandas.read_csv(csv_path)
 
 st.header("Contact Me")
 
