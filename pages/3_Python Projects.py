@@ -2,10 +2,9 @@ import streamlit as st
 import pandas
 from pathlib import Path
 
-csv_path = Path(__file__).parent.parent / 'projects_data.csv'
+csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
 
-st.header("My Projects")
-# st.write("---")
+st.header("Python Projects")
 
 df = pandas.read_csv(csv_path, sep=";")
 col3, col4 = st.columns(2)

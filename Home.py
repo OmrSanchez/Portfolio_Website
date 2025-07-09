@@ -7,24 +7,27 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-col1, col_empty, col2 = st.columns([0.8, 0.2,0.4], gap='Large')
+
+
+
+col1, col_empty, col2 = st.columns([0.8, 0.1,0.4], gap='Large')
 
 with col1:
-    st.title("Omar D. Sanchez")
-    st.subheader("Network & Automation Engineer | USMC Veteran")
-    content = """
-	Highly motivated and results-driven with over 9 years of experience designing,
-        securing, and automating complex DoD network infrastructures.
-	"""
-    st.info(content)
-    st.write(
-        "[🔗 LinkedIn](https://linkedin.com/in/os-networks) | "
-        "[🐙 GitHub](https://github.com/OmrSanchez)")
+    with st.container():
+        st.title("Omar D. Sanchez")
+        st.subheader("Network & Automation Engineer | USMC Veteran")
+        content = """
+        I am a highly motivated and results-driven Network & Automation Engineer, bringing over nine years of dedicated experience from the demanding world of Department of Defense network infrastructures. My journey began in the U.S. Marine Corps, where I learned to build, secure, and maintain mission-critical communication systems under pressure. Today, I apply that same focus and a security-first mindset to the modern enterprise, specializing in designing resilient architectures, implementing robust security protocols, and, most importantly, automating complex operations with tools like Python and Ansible to create more intelligent and efficient networks.
+        """
+        st.info(content)
+        st.write(
+            "[🔗 LinkedIn](https://linkedin.com/in/os-networks) | "
+            "[🐙 GitHub](https://github.com/OmrSanchez)")
 
 with col2:
     with st.container():
         profile_pic = "images/photo.jpg"
-        st.image(profile_pic, width=250, caption='Omar Sanchez')
+        st.image(profile_pic, caption='Omar Sanchez')
 
 with col_empty:
     st.write()
@@ -89,4 +92,4 @@ with proj_col3:
         st.subheader("Password Manager GUI")
         st.write(
             "A secure, user-friendly desktop application built with Python, TKinter, and the MVC design pattern for local password management.")
-        st.link_button("View Project Details", "#")  # Placeholder link
+        st.link_button("View Project Details", "pages/3_Python Projects.py")  # Placeholder link
