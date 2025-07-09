@@ -1,7 +1,11 @@
 import streamlit as st
 import pandas
+from pathlib import Path
 
-df = pandas.read_csv("../data.csv", sep=";")
+csv_path = Path(__file__).parent.parent / '..data.csv'
+
+
+df = pandas.read_csv(csv_path, sep=";")
 col3, col4 = st.columns([1.5, 1.5])
 
 with col3:
