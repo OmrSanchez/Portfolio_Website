@@ -1,11 +1,10 @@
 import streamlit as st
-import pandas
-from PIL import Image
 
 st.set_page_config(
     page_title="Omar Sanchez | Network & Automation Engineer",
     page_icon="🔗",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="auto"
 )
 
 col1, col2 = st.columns([0.4, 0.6], gap="Large")
