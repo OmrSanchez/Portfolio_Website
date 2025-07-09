@@ -1,7 +1,12 @@
 import streamlit as st
 import pandas
+from PIL import Image
 
-st.set_page_config(layout='wide')
+st.set_page_config(
+    page_title="Omar Sanchez | Network & Automation Engineer",
+    page_icon="🔗",
+    layout="wide"
+)
 
 col1, col2 = st.columns(2, vertical_alignment="top")
 
@@ -11,13 +16,10 @@ with col1:
 with col2:
 	st.title("Omar D. Sanchez")
 	content = """
-	Network administrator  and veteran with 7 years of experience of troubleshooting, ensuring the 
-	stable operation of computer network and connected PC’s. Pursuing a Bachelor of Science in Network 
-	Engineering and Security. Strong knowledge of TCP/IP protocol and experience troubleshooting ISP/WAN 
-	and vendor hardware for repair. Specialized with working in various dynamic teams and 
-	environments and consistently commended for initiative, leadership, and ability to complete essential 
-	tasks on time and accurately. Learning to use Python for network automation and cybersecurity is a 
-	skill I enjoy practicing as a hobby.
+	Network Engineer and Marine Corps Veteran with over 9 years of experience and an active Secret clearance. Specializes in designing, 
+	implementing, and securing complex, multi-protocol DoD network infrastructures. Proven expertise in multivendor environments (Cisco, VMWare), 
+	advanced routing (BGP/OSPF), and leveraging automation (Python/Ansible) to enhance network performance. IAT Level II compliant (Security+), 
+	with CCNA and DevNet certifications.
 	"""
 
 	st.info(content)
