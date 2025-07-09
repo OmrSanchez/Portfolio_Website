@@ -92,4 +92,4 @@ with proj_col3:
         st.subheader("Password Manager GUI")
         st.write(
             "A secure, user-friendly desktop application built with Python, TKinter, and the MVC design pattern for local password management.")
-        st.link_button("View Project Details", "Python Projects.py")  # Placeholder link
+        st.link_button("View Project Details", "https://odsnetworking.streamlit.app/Python_Projects")  # Placeholder link
