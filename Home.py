@@ -14,7 +14,7 @@ with col1:
 	st.image(profile_pic, width=250, caption='Omar Sanchez')
 
 with col2:
-	st.title("Omar D. Sanchez")
+	# st.title("Omar D. Sanchez")
 	st.subheader("Network & Automation Engineer | USMC Veteran")
 	content = """
 	Highly motivated and results-driven with over 9 years of experience designing,
