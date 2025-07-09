@@ -56,6 +56,11 @@ with skill_col3:
     - VMWare, Docker, GNS3
     """)
 
+st.write("---")
+st.subheader("Featured Projects")
+st.write("A selection of projects that showcase my skills in automation and application development. *(More projects available on the 'Projects' page)*")
+st.write("")
+
 
 # df = pandas.read_csv("data.csv", sep=";")
 # col3, col4 = st.columns([1.5, 1.5])
