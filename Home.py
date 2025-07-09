@@ -25,7 +25,7 @@ with col2:
 	st.info(content)
 	st.write(
 		"[🔗 LinkedIn](https://linkedin.com/in/os-networks) | "
-		"[🐙 GitHub](https://github.com/OmrSanchez)"
+		"[🐙 GitHub](https://github.com/OmrSanchez)")
 body_text = """
 	Below you can find some of the apps I have built in Python. Feel free to contact me! Test TEXT
 	"""
