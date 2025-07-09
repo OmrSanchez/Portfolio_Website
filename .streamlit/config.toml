@@ -9,13 +9,13 @@ base = "dark"
 primaryColor = "#000000"
 
 # Background color for the main content area.
-backgroundColor = "#222222"
+backgroundColor = "#003C43"
 
 # Background color for sidebar and most interactive widgets.
-secondaryBackgroundColor = "#1DCD9F"
+secondaryBackgroundColor = "#135D66"
 
 # Color used for almost all text.
-textColor = "#2c3e50"
+textColor = "#E3FEF7"
 #169976
 #2c3e50
 
