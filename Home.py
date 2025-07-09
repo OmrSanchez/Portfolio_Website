@@ -26,25 +26,51 @@ with col2:
 	st.write(
 		"[🔗 LinkedIn](https://linkedin.com/in/os-networks) | "
 		"[🐙 GitHub](https://github.com/OmrSanchez)")
-body_text = """
-	Below you can find some of the apps I have built in Python. Feel free to contact me! Test TEXT
-	"""
-st.write(body_text)
 
-df = pandas.read_csv("data.csv", sep=";")
-col3, col4 = st.columns([1.5, 1.5])
+st.write("---")
+st.subheader("Technical Skills & Expertise")
 
-with col3:
-	for index, row in df[:10].iterrows():
-		st.header(row['title'])
-		st.write(row["description"])
-		st.image("images/" + row["image"])
-		st.write("[Source Code]({row['url']})")
+skill_col1, skill_col2, skill_col3 = st.columns(3)
 
-with col4:
-	for index, row in df[10:].iterrows():
-		st.header(row["title"])
-		st.write(row["description"])
-		st.image("images/" + row["image"])
-		st.write("[Source Code]({row['url']})")
+with skill_col1:
+    st.markdown("""
+    ##### Routing & Switching
+    - BGP, OSPF, MPLS, VPLS
+    - STP, VLANs, VRF
+    - Cisco IOS, Brocade IOS
+    """)
+
+with skill_col2:
+    st.markdown("""
+    ##### Automation & Programming
+    - Python, Ansible, REST APIs
+    - Git & Version Control
+    - Cisco NSO (Conceptual)
+    """)
+
+with skill_col3:
+    st.markdown("""
+    ##### Security & Virtualization
+    - Firewalls, VPNs, STIGs
+    - NAC (802.1x), ISE, RADIUS
+    - VMWare, Docker, GNS3
+    """)
+
+
+# df = pandas.read_csv("data.csv", sep=";")
+# col3, col4 = st.columns([1.5, 1.5])
+#
+# with col3:
+# 	for index, row in df[:10].iterrows():
+# 		st.header(row['title'])
+# 		st.write(row["description"])
+# 		st.image("images/" + row["image"])
+# 		st.write("[Source Code]({row['url']})")
+#
+# with col4:
+# 	for index, row in df[10:].iterrows():
+# 		st.header(row["title"])
+# 		st.write(row["description"])
+# 		st.image("images/" + row["image"])
+# 		st.write("[Source Code]({row['url']})")
 
