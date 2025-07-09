@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-col1, col2 = st.columns(2, vertical_alignment="top")
+col1, col2 = st.columns([0.4, 0.6], gap="Large")
 
 with col1:
 	profile_pic = "images/photo.jpg"
