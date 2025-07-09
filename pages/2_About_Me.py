@@ -8,11 +8,6 @@ st.set_page_config(page_title="About Me", page_icon="👤", layout="wide")
 st.title("About Me")
 st.write("---")
 
-add_selectbox = st.sidebar.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone')
-)
-
 # --- MAIN CONTENT ---
 st.markdown(
     """
