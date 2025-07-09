@@ -30,7 +30,7 @@ body_text = """
 st.write(body_text)
 
 df = pandas.read_csv("data.csv", sep=";")
-col3, col_empty, col4 = st.columns([1.5, 1.5])
+col3, col4 = st.columns([1.5, 1.5])
 
 with col3:
 	for index, row in df[:10].iterrows():
