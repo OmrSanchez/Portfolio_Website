@@ -80,10 +80,11 @@ with proj_col1:
 # Project Card 2
 with proj_col2:
     with st.container(border=True):
-        st.subheader("PDF Invoice Generator")
+        st.subheader("Tic-Tac-Toe")
         st.write(
-            "Practical automation script that parses Excel data to programmatically generate PDF invoices, saving significant manual effort.")
-        st.link_button("View Project Details", "#")  # Placeholder link
+            "A guizero-based Tic-Tac-Toe game. Uses colors instead of symbols to track player turns.")
+        st.image('images/8.png')
+        st.link_button("View Project Details", f"{BASE_URL}Python_Projects")
 
 # Project Card 3
 with proj_col3:
