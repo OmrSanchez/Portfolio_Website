@@ -2,6 +2,8 @@ import streamlit as st
 import pandas
 from pathlib import Path
 
+from streamlit.runtime.media_file_storage import MediaFileStorageError
+
 st.set_page_config(
 	page_title="Network/Automation Projects",
 	page_icon='🐍',
@@ -22,6 +24,11 @@ for index, row in net_df.iterrows():
 		with st.container(border=True):
 			st.header(row['title'])
 			st.write(row["description"])
-			st.image("net_images/" + row["image"], use_container_width=True)
+			try:
+				st.video("net_videos/" + row["video"])
+			except MediaFileStorageError:
+				st.image("net_images/" + row["image"], use_container_width=True)
+			except TypeError:
+				st.image("net_images/" + row["image"], use_container_width=True)
 			st.write(row['goal'])
-			st.write(f"[Source Code]({row['url']})")
+			st.write(f"[More Details]({row['url']})")

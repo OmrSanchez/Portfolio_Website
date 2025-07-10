@@ -1,8 +1,10 @@
 import streamlit as st
+from pathlib import Path
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="About Me", page_icon="👤", layout="wide")
 
+img_path = Path(__file__).parent.parent / 'images/about_photo.png'
 
 # --- HERO SECTION ---
 st.title("About Me")
@@ -28,3 +30,5 @@ st.markdown(
     I am excited to bring my unique blend of leadership experience, technical expertise, and a security-first mindset to a new challenge. I am looking for a team where I can contribute to meaningful projects, solve complex problems, and continue to grow alongside other dedicated professionals.
     """
 )
+
+# st.image(img_path)
