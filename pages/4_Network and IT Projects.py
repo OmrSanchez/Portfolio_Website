@@ -8,11 +8,20 @@ st.set_page_config(
 	layout='wide'
 )
 
-
 csv_path = Path(__file__).parent.parent / 'network_automation_projects_data.csv'
 
-st.header("Network and IT Projects")
+st.header("Network, IT, and Automation Projects")
 
-st.info("This page is currently a work in progress as I gather the necessary information.")
+# st.info("This page is currently a work in progress as I gather the necessary information.")
 
-df = pandas.read_csv(csv_path, sep=";")
+net_df = pandas.read_csv(csv_path, sep=";")
+columns = st.columns(3)
+
+for index, row in net_df.iterrows():
+	with columns[index % 3]:
+		with st.container(border=True):
+			st.header(row['title'])
+			st.write(row["description"])
+			st.image("net_images/" + row["image"], use_container_width=True)
+			st.write(row['goal'])
+			st.write(f"[Source Code]({row['url']})")

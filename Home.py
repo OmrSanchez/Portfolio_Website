@@ -7,9 +7,6 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-
-
-
 col1, col_empty, col2 = st.columns([0.8, 0.1,0.4], gap='Large')
 
 with col1:
