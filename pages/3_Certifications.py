@@ -29,7 +29,7 @@ main_cols = st.columns(num_columns)
 
 for index, row in cert_df.iterrows():
     with main_cols[index % num_columns]:
-        st.markdown(f"##### {row['name']}")
+        st.markdown(f"###### {row['name']}")
         pdf_file_name = row['pdf']
         pdf_file_path = pdf_image_dir / pdf_file_name  # Construct full path to the PDF
 
