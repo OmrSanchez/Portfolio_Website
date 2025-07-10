@@ -1,5 +1,7 @@
 import streamlit as st
 
+BASE_URL = "https://odsnetworking.streamlit.app/"
+
 st.set_page_config(
     page_title="Omar Sanchez | Network & Automation Engineer",
     page_icon="🔗",
@@ -69,11 +71,11 @@ proj_col1, proj_col2, proj_col3 = st.columns(3)
 # Project Card 1
 with proj_col1:
     with st.container(border=True):
-        st.subheader("Network API Automation")
+        st.subheader("Network Performance Tracking and Sniffing")
         st.write(
-            "Python scripts utilizing REST APIs to automate monitoring and configuration tasks for Cisco Meraki and DevNet sandboxes.")
-        # When you create your projects page, you'll link to it here
-        st.link_button("View Project Details", "#")  # Placeholder link
+            "Establish a foundation of utilizing performance monitor to collect network traffic and showcase familiarity with Wireshark for sniffing.")
+        st.video('net_videos/Project - Basic Network Performance Monitoring and Sniffing.mp4')
+        st.link_button("View Project Details", f"{BASE_URL}Network_Automation_&_IT_Projects")
 
 # Project Card 2
 with proj_col2:
@@ -88,5 +90,6 @@ with proj_col3:
     with st.container(border=True):
         st.subheader("Password Manager GUI")
         st.write(
-            "A secure, user-friendly desktop application built with Python, TKinter, and the MVC design pattern for local password management.")
-        st.link_button("View Project Details", "https://odsnetworking.streamlit.app/Python_Projects")  # Placeholder link
+            "A password manager built in Python. Support password generation and login search and lookup. MVC and Tkinter.")
+        st.image('images/4.png')
+        st.link_button("View Project Details", f"{BASE_URL}Python_Projects")  # Placeholder link
