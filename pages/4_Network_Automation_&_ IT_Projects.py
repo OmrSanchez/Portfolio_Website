@@ -12,7 +12,7 @@ st.set_page_config(
 
 csv_path = Path(__file__).parent.parent / 'network_automation_projects_data.csv'
 
-st.header("Network, IT, and Automation Projects")
+st.title("Network Automation & IT Projects")
 
 # st.info("This page is currently a work in progress as I gather the necessary information.")
 
@@ -22,7 +22,7 @@ columns = st.columns(3)
 for index, row in net_df.iterrows():
 	with columns[index % 3]:
 		with st.container(border=True):
-			st.header(row['title'])
+			st.subheader(row['title'])
 			st.write(row["description"])
 			try:
 				st.video("net_videos/" + row["video"])

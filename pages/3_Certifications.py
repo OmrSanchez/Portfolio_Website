@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon='📜',
     layout='wide'
 )
-st.header("Certifications")
+st.title("Certifications")
 st.write("---")
 
 csv_path = Path(__file__).parent.parent / 'certifications.csv'
@@ -44,7 +44,7 @@ for index, row in cert_df.iterrows():
                 img_bytes = pix.tobytes("png")
 
                 # Display the image in Streamlit
-                st.image(img_bytes, caption=f"{row['name']}", use_container_width=True)
+                st.image(img_bytes, use_container_width=True)
                 doc.close()  # Close the PDF document
 
             except Exception as e:
