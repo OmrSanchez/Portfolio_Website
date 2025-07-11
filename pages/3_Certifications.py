@@ -29,42 +29,43 @@ main_cols = st.columns(num_columns)
 
 for index, row in cert_df.iterrows():
     with main_cols[index % num_columns]:
-        st.markdown(f"###### {row['name']}")
-        pdf_file_name = row['pdf']
-        pdf_file_path = pdf_image_dir / pdf_file_name  # Construct full path to the PDF
+        with st.container():
+            st.markdown(f"###### {row['name']}")
+            pdf_file_name = row['pdf']
+            pdf_file_path = pdf_image_dir / pdf_file_name  # Construct full path to the PDF
 
-        if pdf_file_path.is_file():
-            try:
-                # Open the PDF file
-                doc = fitz.open(pdf_file_path)
-                page = doc.load_page(0)  # Load the first page (index 0)
+            if pdf_file_path.is_file():
+                try:
+                    # Open the PDF file
+                    doc = fitz.open(pdf_file_path)
+                    page = doc.load_page(0)  # Load the first page (index 0)
 
-                # Render page to a PNG image bytes
-                pix = page.get_pixmap()
-                img_bytes = pix.tobytes("png")
+                    # Render page to a PNG image bytes
+                    pix = page.get_pixmap()
+                    img_bytes = pix.tobytes("png")
 
-                # Display the image in Streamlit
-                st.image(img_bytes, use_container_width=True)
-                doc.close()  # Close the PDF document
+                    # Display the image in Streamlit
+                    st.image(img_bytes, use_container_width=True)
+                    doc.close()  # Close the PDF document
 
-            except Exception as e:
-                st.error(f"Could not render PDF content for {row['name']} as image: {e}")
-                st.button(f"PDF Render Error", disabled=True, key=f"pdf_render_error_{index}")
+                except Exception as e:
+                    st.error(f"Could not render PDF content for {row['name']} as image: {e}")
+                    st.button(f"PDF Render Error", disabled=True, key=f"pdf_render_error_{index}")
 
-            # Display Acquired and Expires dates directly underneath the image
-            st.markdown(f"**Acquired:** {row['acquired']}")
-            if pandas.notna(row['expires']):
-                st.markdown(f"**Expires:** {row['expires']}")
+                # Display Acquired and Expires dates directly underneath the image
+                st.markdown(f"**Acquired:** {row['acquired']}")
+                if pandas.notna(row['expires']):
+                    st.markdown(f"**Expires:** {row['expires']}")
+                else:
+                    st.markdown(f"**Expires:** N/A")
             else:
-                st.markdown(f"**Expires:** N/A")
-        else:
-            st.warning(f"PDF file '{pdf_file_name}' not found for {row['name']} at '{pdf_file_path}'.")
-            # Display placeholders for dates even if PDF is missing
-            st.markdown(f"**Acquired:** {row['acquired']}")
-            if pandas.notna(row['expires']):
-                st.markdown(f"**Expires:** {row['expires']}")
-            else:
-                st.markdown(f"**Expires:** N/A")
-            st.button(f"PDF Missing", disabled=True, key=f"pdf_missing_{index}")
+                st.warning(f"PDF file '{pdf_file_name}' not found for {row['name']} at '{pdf_file_path}'.")
+                # Display placeholders for dates even if PDF is missing
+                st.markdown(f"**Acquired:** {row['acquired']}")
+                if pandas.notna(row['expires']):
+                    st.markdown(f"**Expires:** {row['expires']}")
+                else:
+                    st.markdown(f"**Expires:** N/A")
+                st.button(f"PDF Missing", disabled=True, key=f"pdf_missing_{index}")
 
-        st.markdown("---")  # Add a separator between certification cards for visual clarity
+            st.markdown("---")  # Add a separator between certification cards for visual clarity
