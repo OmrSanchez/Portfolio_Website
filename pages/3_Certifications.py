@@ -29,7 +29,7 @@ main_cols = st.columns(num_columns)
 
 for index, row in cert_df.iterrows():
     with main_cols[index % num_columns]:
-        with st.container():
+        with st.container(height=550):
             st.markdown(f"###### {row['name']}")
             pdf_file_name = row['pdf']
             pdf_file_path = pdf_image_dir / pdf_file_name  # Construct full path to the PDF
@@ -68,4 +68,4 @@ for index, row in cert_df.iterrows():
                     st.markdown(f"**Expires:** N/A")
                 st.button(f"PDF Missing", disabled=True, key=f"pdf_missing_{index}")
 
-            st.markdown("---")  # Add a separator between certification cards for visual clarity
+             # Add a separator between certification cards for visual clarity
