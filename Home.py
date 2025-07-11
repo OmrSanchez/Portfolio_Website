@@ -20,8 +20,8 @@ with col1:
         """
         st.info(content)
         st.write(
-            "[💻 LinkedIn](https://linkedin.com/in/os-networks) | "
-            "[🐙 GitHub](https://github.com/OmrSanchez)")
+            "[📲 LinkedIn](https://linkedin.com/in/os-networks) | "
+            "[💻 GitHub](https://github.com/OmrSanchez)")
 
 with col2:
     with st.container(height=450, border=False):
