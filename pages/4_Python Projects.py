@@ -11,6 +11,7 @@ st.set_page_config(
 csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
 
 st.title("Python Projects")
+st.write("---")
 
 df = pandas.read_csv(csv_path, sep=";")
 columns = st.columns([0.2, 0.2, 0.2, 0.2])
