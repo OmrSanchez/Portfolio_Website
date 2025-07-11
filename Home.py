@@ -4,7 +4,7 @@ BASE_URL = "https://odsnetworking.streamlit.app/"
 
 st.set_page_config(
     page_title="Omar Sanchez | Network & Automation Engineer",
-    page_icon="🔗",
+    page_icon="🚹",
     layout="wide",
     initial_sidebar_state="auto"
 )
@@ -20,7 +20,7 @@ with col1:
         """
         st.info(content)
         st.write(
-            "[🔗 LinkedIn](https://linkedin.com/in/os-networks) | "
+            "[💻 LinkedIn](https://linkedin.com/in/os-networks) | "
             "[🐙 GitHub](https://github.com/OmrSanchez)")
 
 with col2:
