@@ -18,10 +18,10 @@ st.write("---")
 # st.info("This page is currently a work in progress as I gather the necessary information.")
 
 net_df = pandas.read_csv(csv_path, sep=";")
-columns = st.columns(4)
+columns = st.columns(3)
 
 for index, row in net_df.iterrows():
-	with columns[index % 4]:
+	with columns[index % 3]:
 		with st.container(border=True, height=700):
 			st.subheader(row['title'])
 			st.write(row["description"])
