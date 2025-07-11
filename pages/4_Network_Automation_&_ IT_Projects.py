@@ -17,13 +17,14 @@ st.title("Network Automation & IT Projects")
 # st.info("This page is currently a work in progress as I gather the necessary information.")
 
 net_df = pandas.read_csv(csv_path, sep=";")
-columns = st.columns(3)
+columns = st.columns(4)
 
 for index, row in net_df.iterrows():
-	with columns[index % 3]:
-		with st.container(border=True, height=750):
+	with columns[index % 4]:
+		with st.container(border=True, height=700):
 			st.subheader(row['title'])
 			st.write(row["description"])
+			st.write(f"[More Details]({row['url']})")
 			try:
 				st.video("net_videos/" + row["video"])
 			except MediaFileStorageError:
@@ -31,5 +32,4 @@ for index, row in net_df.iterrows():
 			except TypeError:
 				st.image("net_images/" + row["image"], use_container_width=True)
 			st.write(row['goal'])
-			st.write(f"[More Details]({row['url']})")
 		st.write("---")

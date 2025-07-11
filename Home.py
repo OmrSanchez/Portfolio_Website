@@ -9,10 +9,10 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-col1, col_empty, col2 = st.columns([0.8, 0.1,0.4], gap='Large')
+col1, col_empty, col2 = st.columns([0.85, 0.1, 0.4], gap='Medium')
 
 with col1:
-    with st.container():
+    with st.container(height=450, border=False):
         st.title("Omar D. Sanchez")
         st.subheader("Network & Automation Engineer | USMC Veteran")
         content = """
@@ -24,9 +24,9 @@ with col1:
             "[🐙 GitHub](https://github.com/OmrSanchez)")
 
 with col2:
-    with st.container():
+    with st.container(height=450, border=False):
         profile_pic = "images/photo.jpg"
-        st.image(profile_pic, caption='Omar Sanchez', width=400)
+        st.image(profile_pic, caption='Omar Sanchez', width=375)
 
 with col_empty:
     st.write()
