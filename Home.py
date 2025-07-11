@@ -26,7 +26,7 @@ with col1:
 with col2:
     with st.container():
         profile_pic = "images/photo.jpg"
-        st.image(profile_pic, caption='Omar Sanchez')
+        st.image(profile_pic, caption='Omar Sanchez', width=400)
 
 with col_empty:
     st.write()
@@ -70,27 +70,27 @@ proj_col1, proj_col2, proj_col3 = st.columns(3)
 
 # Project Card 1
 with proj_col1:
-    with st.container(border=True):
+    with st.container(border=True, height=600):
         st.subheader("Network Performance Tracking and Sniffing")
         st.write(
             "Establish a foundation of utilizing performance monitor to collect network traffic and showcase familiarity with Wireshark for sniffing.")
-        st.video('net_videos/Project - Basic Network Performance Monitoring and Sniffing.mp4')
+        st.video('net_videos/Project - Basic Network Performance Monitoring and Sniffing.mp4', width=550)
         st.link_button("View Project Details", f"{BASE_URL}Network_Automation_&_IT_Projects")
 
 # Project Card 2
 with proj_col2:
-    with st.container(border=True):
+    with st.container(border=True, height=600):
         st.subheader("Tic-Tac-Toe")
         st.write(
             "A guizero-based Tic-Tac-Toe game. Uses colors instead of symbols to track player turns.")
-        st.image('images/8.png')
+        st.image('images/8.png', width=400)
         st.link_button("View Project Details", f"{BASE_URL}Python_Projects")
 
 # Project Card 3
 with proj_col3:
-    with st.container(border=True):
+    with st.container(border=True, height=600):
         st.subheader("Password Manager GUI")
         st.write(
             "A password manager built in Python. Support password generation and login search and lookup. MVC and Tkinter.")
-        st.image('images/4.png')
+        st.image('images/4.png', width=400)
         st.link_button("View Project Details", f"{BASE_URL}Python_Projects")  # Placeholder link

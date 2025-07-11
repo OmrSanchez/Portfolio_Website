@@ -13,13 +13,14 @@ csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
 st.title("Python Projects")
 
 df = pandas.read_csv(csv_path, sep=";")
-columns = st.columns(4)
+columns = st.columns(3)
 
 for index, row in df.iterrows():
-	with columns[index % 4]:
-		with st.container(border=True):
+	with columns[index % 3]:
+		with st.container(border=True, height=600):
 			st.subheader(row['title'])
-			st.write(row["description"])
-			st.image("images/" + row["image"], use_container_width=True)
+			st.markdown(f"###### {row["description"]}")
+			st.image("images/" + row["image"], width=325)
 			st.write(row['goal'])
 			st.write(f"[Source Code]({row['url']})")
+		st.write("---")

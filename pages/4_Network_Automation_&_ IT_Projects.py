@@ -21,7 +21,7 @@ columns = st.columns(3)
 
 for index, row in net_df.iterrows():
 	with columns[index % 3]:
-		with st.container(border=True):
+		with st.container(border=True, height=750):
 			st.subheader(row['title'])
 			st.write(row["description"])
 			try:
@@ -32,3 +32,4 @@ for index, row in net_df.iterrows():
 				st.image("net_images/" + row["image"], use_container_width=True)
 			st.write(row['goal'])
 			st.write(f"[More Details]({row['url']})")
+		st.write("---")
