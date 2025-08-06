@@ -13,11 +13,19 @@ st.write("---")
 # --- MAIN CONTENT ---
 st.subheader('My Journey: From the Battlefield to the Backbone of Technology')
 
-st.write("""My passion for network engineering was forged in one of the most demanding environments imaginable: the United States Marine Corps. For eight years, I wasn't just supporting communications; I was on the digital front lines, leading teams and engineering secure satellite networks where 99.9% uptime wasn't a goal, it was the mission. That experience, where every signal matters, ignited an unwavering drive in me to build and protect the systems that connect our world.
+st.write("""
+    My passion for network engineering was forged in one of the most demanding environments imaginable: the United States Marine Corps. For
+eight years, I wasn't just supporting communications; I was on the digital front lines, leading teams and engineering secure satellite
+networks where 99.9% uptime wasn't a goal, it was the mission. That experience, where every signal matters, ignited an unwavering drive in 
+me to build and protect the systems that connect our world.
 
-Transitioning from the military wasn't an end, but an acceleration. I dove headfirst into the technologies that form the digital nervous system of modern enterprise, driven by a relentless curiosity to master everything from the physical layer to the application. This wasn't just about earning certifications—it was about a structured, aggressive pursuit of deep, practical knowledge in networking, security, and the future of automation.""")
+    Transitioning from the military wasn't an end, but an acceleration. I dove headfirst into the technologies that form the digital nervous
+system of modern enterprise, driven by a relentless curiosity to master everything from the physical layer to the application. This wasn't
+just about earning certifications—it was about a structured, aggressive pursuit of deep, practical knowledge in networking, security, and
+the future of automation.""")
 
 st.subheader('An Accelerated Timeline of Key Milestones')
+
 
 st.write("""
 • January 2016: Began my journey of service and technical leadership with the U.S. Marine Corps.
