@@ -11,22 +11,31 @@ st.title("About Me")
 st.write("---")
 
 # --- MAIN CONTENT ---
-st.subheader('From Marine Corps Sergeant to Network Engineer')
+st.subheader('My Journey: From the Battlefield to the Backbone of Technology')
 
-st.write('My journey into the world of network engineering began not in a server room, but in the demanding and mission-critical environment of the United States Marine Corps. For eight years, I had the privilege of leading teams and engineering secure satellite communication networks. This experience taught me invaluable lessons about discipline, resilience, and the absolute necessity of reliable, secure infrastructure when everything is on the line. It was here that I discovered my passion for building the systems that connect and protect people.')
+st.write("""My passion for network engineering was forged in one of the most demanding environments imaginable: the United States Marine Corps. For eight years, I wasn't just supporting communications; I was on the digital front lines, leading teams and engineering secure satellite networks where 99.9% uptime wasn't a goal, it was the mission. That experience, where every signal matters, ignited an unwavering drive in me to build and protect the systems that connect our world.
 
-st.subheader('A Passion for Problem-Solving and Continuous Learning')
+Transitioning from the military wasn't an end, but an acceleration. I dove headfirst into the technologies that form the digital nervous system of modern enterprise, driven by a relentless curiosity to master everything from the physical layer to the application. This wasn't just about earning certifications—it was about a structured, aggressive pursuit of deep, practical knowledge in networking, security, and the future of automation.""")
 
-st.write("""
-    Transitioning from the military, I knew I wanted to dive deeper into the technologies that form the backbone of modern communication. I am driven by a relentless curiosity and a deep-seated desire to understand how things work, from the physical layer all the way up to the application. This led me to pursue a comprehensive portfolio of certifications, not just as badges of honor, but as structured paths to acquiring deep, practical knowledge in networking, security, and automation.
-
-    For me, learning is an active process. Whether I am in my home lab working through complex BGP routing scenarios, developing a new Python application to automate a tedious task, or studying for my next certification, I am always pushing to expand my skill set. I believe the best engineers are perpetual students.
-    """
-)
-
-st.subheader("My Philosophy and What's Next")
+st.subheader('An Accelerated Timeline of Key Milestones')
 
 st.write("""
-    I believe that technology should be an enabler—it should be secure, efficient, and resilient, allowing an organization to focus on its mission. As an engineer, I see my role as a steward of that infrastructure. I am passionate about not only maintaining systems but actively improving them through smart design and automation. I am excited to bring my unique blend of leadership experience, technical expertise, and a security-first mindset to a new challenge. I am looking for a team where I can contribute to meaningful projects, solve complex problems, and continue to grow alongside other dedicated professionals.
+• January 2016: Began my journey of service and technical leadership with the U.S. Marine Corps.
+
+• February 2024: Honorably concluded eight years of service as a Sergeant, immediately pivoting my focus to a full-time career in network engineering.
+
+• June 2025: Achieved a trifecta of modern Cisco certifications, earning the CCNA, DevNet Associate, and Cybersecurity Associate to build a comprehensive, multi-disciplinary skill set.
+
+• August 2025: Successfully completed my university Capstone Project, where I designed, built, and tested a complex, multi-site enterprise network from the ground up.
+
+• August 2025: Officially earned my Bachelor of Science in Network Engineering and Security, completing a rigorous, hands-on degree program.
+""")
+
+st.subheader("My Philosophy: Build, Automate, and Secure")
+
+st.write("""
+I believe the best engineers are perpetual students, and I live that philosophy every day. Whether I'm in my home lab breaking and fixing BGP routing scenarios, building a new Python application in my portfolio, or studying emerging security threats, I am constantly pushing the boundaries of my skill set.
+
+My goal is to be more than just an administrator who maintains systems; I am an engineer who actively improves them through intelligent design and automation. I'm not just looking for a job—I'm looking for a new mission. I am eager to bring my unique blend of military discipline, technical expertise, and a security-first mindset to a team where I can help solve complex challenges and contribute to building the resilient and impenetrable networks of the future.
     """
 )
