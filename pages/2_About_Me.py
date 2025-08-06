@@ -24,9 +24,11 @@ st.write("""
 
 • February 2024: Honorably concluded eight years of service as a Sergeant, immediately pivoting my focus to a full-time career in network engineering.
 
-• June 2025: Achieved a trifecta of modern Cisco certifications, earning the CCNA, DevNet Associate, and Cybersecurity Associate to build a comprehensive, multi-disciplinary skill set.
+• June 2025: Achieved a trifecta of modern Cisco certifications, earning the CCNA, DevNet Associate, and Cybersecurity Associate to build a 
+    comprehensive, multi-disciplinary skill set.
 
-• August 2025: Successfully completed my university Capstone Project, where I designed, built, and tested a complex, multi-site enterprise network from the ground up.
+• August 2025: Successfully completed my university Capstone Project, where I designed, built, and tested a complex, multi-site enterprise 
+    network from the ground up.
 
 • August 2025: Officially earned my Bachelor of Science in Network Engineering and Security, completing a rigorous, hands-on degree program.
 """)
