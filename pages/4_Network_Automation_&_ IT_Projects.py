@@ -12,7 +12,7 @@ st.set_page_config(
 
 csv_path = Path(__file__).parent.parent / 'network_automation_projects_data.csv'
 
-st.title("Network Automation & IT Projects")
+st.title("Network Design, Troubleshooting, Automation, and IT Projects")
 
 # st.info("This page is currently a work in progress as I gather the necessary information.")
 
