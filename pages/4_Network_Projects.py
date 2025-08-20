@@ -31,3 +31,5 @@ for index, row in net_df.iterrows():
 				st.image("net_images/" + row["image"], use_container_width=True)
 			st.write(row['goal'])
 			st.write(f"[More Details]({row['url']})")
+
+        st.write("---")
