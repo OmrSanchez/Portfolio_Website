@@ -35,7 +35,7 @@ st.write("---")
 
 
 st.markdown("## Technical Skills & Expertise")
-st.write("---")
+
 
 # Create a two-column layout
 col1, col2 = st.columns(2, gap="medium")
