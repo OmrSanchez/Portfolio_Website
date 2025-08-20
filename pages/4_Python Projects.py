@@ -13,11 +13,12 @@ csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
 st.title("Python Projects")
 st.write("---")
 
+column_count = 4
 df = pandas.read_csv(csv_path, sep=";")
-columns = st.columns(4)
+columns = st.columns(column_count)
 
 for index, row in df.iterrows():
-	with columns[index % 4]:
+	with columns[index % column_count]:
 		with st.container(border=True, height=600):
 			st.subheader(row['title'])
 			st.markdown(f"###### {row["description"]}")
