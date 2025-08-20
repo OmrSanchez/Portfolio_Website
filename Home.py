@@ -20,14 +20,14 @@ with col1:
         I am a highly motivated and results-driven Network & Automation Engineer, bringing over nine years of dedicated experience from the demanding world of Department of Defense network infrastructures. My journey began in the U.S. Marine Corps, where I learned to build, secure, and maintain mission-critical communication systems under pressure. Today, I apply that same focus and a security-first mindset to the modern enterprise, specializing in designing resilient architectures, implementing robust security protocols, and, most importantly, automating complex operations with tools like Python and Ansible to create more intelligent and efficient networks.
         """
         st.info(content)
-        st.write(
-            "[📲 LinkedIn](https://linkedin.com/in/os-networks) | "
-            "[💻 GitHub](https://github.com/OmrSanchez)")
 
 with col2:
     with st.container(height=450, border=False):
         profile_pic = "images/photo.jpg"
         st.image(profile_pic, caption='Omar Sanchez', width=375)
+        st.write(
+            "[📲 LinkedIn](https://linkedin.com/in/os-networks) | "
+            "[💻 GitHub](https://github.com/OmrSanchez)")
 
 with col_empty:
     st.write()
