@@ -6,7 +6,7 @@ from streamlit.runtime.media_file_storage import MediaFileStorageError
 
 st.set_page_config(
 	page_title="Network/Automation Projects",
-	page_icon='🐍',
+	page_icon='🛜',
 	layout='wide'
 )
 
