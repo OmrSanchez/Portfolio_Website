@@ -4,7 +4,7 @@ BASE_URL = "https://odsnetworking.streamlit.app/"
 
 st.set_page_config(
     page_title="Omar Sanchez | Network & Automation Engineer",
-    page_icon="🚹",
+    page_icon="💼",
     layout="wide",
     initial_sidebar_state="auto"
 )
@@ -76,7 +76,7 @@ with proj_col1:
         st.write(
             "A comprehensive capstone project involving the design, implementation, and testing of a secure, multi-site enterprise network. The architecture features a collapsed-core design, a site-to-site IPsec VPN, and high availability with HSRP. The network utilizes a hybrid routing scheme with BGP for external connectivity and OSPF for internal routing, all supported by a full suite of centralized network services and a multi-layered security model including firewalls, ACLs, and 802.1x.")
         st.image('net_images/net_7.png', width=575)
-        st.link_button("View Project Details", f"{BASE_URL}Network_Design_Automation_&_IT_Projects")
+        st.link_button("View Project Details", f"{BASE_URL}Network_Projects")
 
 # Project Card 2
 with proj_col2:
@@ -105,4 +105,4 @@ with proj_col4:
         st.write(
             "Establish a foundation of utilizing performance monitor to collect network traffic and showcase familiarity with Wireshark for sniffing.")
         st.video('net_videos/Project - Basic Network Performance Monitoring and Sniffing.mp4', width=550)
-        st.link_button("View Project Details", f"{BASE_URL}Network_Design_Automation_&_IT_Projects")
+        st.link_button("View Project Details", f"{BASE_URL}Network_Projects")
