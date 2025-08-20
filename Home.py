@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="Omar Sanchez | Network & Automation Engineer",
     page_icon="💼",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="auto"
 )
 
 col1, col_empty, col2 = st.columns([0.85, 0.1, 0.4], gap='Small')
