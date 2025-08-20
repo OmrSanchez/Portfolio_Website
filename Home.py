@@ -22,7 +22,7 @@ with col1:
         st.info(content)
 
 with col2:
-    with st.container(height=500, border=False):
+    with st.container(height=525, border=False):
         profile_pic = "images/photo.jpg"
         caption = f"[📲 LinkedIn](https://linkedin.com/in/os-networks) | [💻 GitHub](https://github.com/OmrSanchez)"
         st.image(profile_pic, caption=caption)
