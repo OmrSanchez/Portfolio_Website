@@ -13,7 +13,7 @@ csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
 st.title("Python Projects")
 st.write("---")
 
-column_count = 4
+column_count = 2
 df = pandas.read_csv(csv_path, sep=";")
 columns = st.columns(column_count)
 
