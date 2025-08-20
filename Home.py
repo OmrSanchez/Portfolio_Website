@@ -24,10 +24,9 @@ with col1:
 with col2:
     with st.container(height=500, border=False):
         profile_pic = "images/photo.jpg"
-        st.image(profile_pic, caption='Omar Sanchez', width=375)
-        st.write(
-            "[📲 LinkedIn](https://linkedin.com/in/os-networks) | "
-            "[💻 GitHub](https://github.com/OmrSanchez)")
+        caption = f"[📲 LinkedIn](https://linkedin.com/in/os-networks) | [💻 GitHub](https://github.com/OmrSanchez)"
+        st.image(profile_pic, caption=caption)
+
 
 with col_empty:
     st.write()
