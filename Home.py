@@ -67,7 +67,7 @@ st.write(
     "A selection of projects that showcase my skills in network design, automation, and application development. *(More projects available on the 'Projects' page)*")
 st.write("")
 
-proj_col1, proj_col2, proj_col3 = st.columns(3)
+proj_col1, proj_col2 = st.columns(2)
 
 # Project Card 1
 with proj_col1:
@@ -83,9 +83,12 @@ with proj_col2:
     with st.container(border=True, height=600):
         st.subheader("Network Performance Tracking and Sniffing")
         st.write(
-            "Establish a foundation of utilizing performance monitor to collect network traffic and showcase familiarity with Wireshark for sniffing.")
-        st.video('net_videos/Project - Basic Network Performance Monitoring and Sniffing.mp4', width=550)
+            "A comprehensive GNS3 simulation of a resilient, dual-site enterprise network using a three-tier architecture. Implements OSPF, HSRP, NAT, and advanced Layer 2 security.")
+        st.image('net_images/net_8.png', width=550)
         st.link_button("View Project Details", f"{BASE_URL}Network_Design_Automation_&_IT_Projects")
+
+
+proj_col3, proj_col4 = st.columns(2)
 
 # Project Card 3
 with proj_col3:
@@ -95,3 +98,11 @@ with proj_col3:
             "A guizero-based Tic-Tac-Toe game. Uses colors instead of symbols to track player turns.")
         st.image('images/8.png', width=400)
         st.link_button("View Project Details", f"{BASE_URL}Python_Projects")
+
+with proj_col4:
+    with st.container(border=True, height=600):
+        st.subheader("Network Performance Tracking and Sniffing")
+        st.write(
+            "Establish a foundation of utilizing performance monitor to collect network traffic and showcase familiarity with Wireshark for sniffing.")
+        st.video('net_videos/Project - Basic Network Performance Monitoring and Sniffing.mp4', width=550)
+        st.link_button("View Project Details", f"{BASE_URL}Network_Design_Automation_&_IT_Projects")

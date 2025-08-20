@@ -14,13 +14,12 @@ csv_path = Path(__file__).parent.parent / 'network_automation_projects_data.csv'
 
 st.title("Network Design, Troubleshooting, Automation, and IT Projects")
 
-# st.info("This page is currently a work in progress as I gather the necessary information.")
-
+col_count = 2
 net_df = pandas.read_csv(csv_path, sep=";")
-columns = st.columns(3)
+columns = st.columns(col_count)
 
 for index, row in net_df.iterrows():
-	with columns[index % 3]:
+	with columns[index % col_count]:
 		with st.container(border=True):
 			st.subheader(row['title'])
 			st.write(row["description"])
