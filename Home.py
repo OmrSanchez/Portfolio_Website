@@ -81,7 +81,7 @@ with proj_col1:
 # Project Card 2
 with proj_col2:
     with st.container(border=True, height=600):
-        st.subheader("Network Performance Tracking and Sniffing")
+        st.subheader("Dual Site 3-Tier Network Lab")
         st.write(
             "A comprehensive GNS3 simulation of a resilient, dual-site enterprise network using a three-tier architecture. Implements OSPF, HSRP, NAT, and advanced Layer 2 security.")
         st.image('net_images/net_8.png', width=550)
