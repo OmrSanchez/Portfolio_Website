@@ -9,7 +9,7 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-col1, col_empty, col2 = st.columns([0.85, 0.1, 0.4], gap='Small')
+col1, col_empty, col2 = st.columns([0.85, 0.025, 0.4], gap='Small')
 
 with col1:
     with st.container(height=500, border=False):
@@ -27,23 +27,16 @@ with col2:
         caption = f"[📲 LinkedIn](https://linkedin.com/in/os-networks) | [💻 GitHub](https://github.com/OmrSanchez)"
         st.image(profile_pic, caption=caption)
 
-
 with col_empty:
     st.write()
 
-st.write("---")
-
-
 st.markdown("## Technical Skills & Expertise")
+st.write("___")
 
-
-# Create a two-column layout
 col1, col2 = st.columns(2, gap="medium")
 
-# Populate the first column
 with col1:
-    # Container for Routing & Switching skills
-    with st.container(border=True, height=250):
+    with st.container(border=False, height=250):
         st.markdown(
             """
             #### Routing & Switching
@@ -54,8 +47,7 @@ with col1:
             """
         )
 
-    # Container for Network Security skills
-    with st.container(border=True, height=260):
+    with st.container(border=False, height=260):
         st.markdown(
             """
             #### Network Security
@@ -66,10 +58,8 @@ with col1:
             """
         )
 
-# Populate the second column
 with col2:
-    # Container for Automation & Programming skills
-    with st.container(border=True, height=250):
+    with st.container(border=False, height=250):
         st.markdown(
             """
             #### Automation & Programming
@@ -78,8 +68,7 @@ with col2:
             """
         )
 
-    # Container for Services & Virtualization skills
-    with st.container(border=True, height=250):
+    with st.container(border=False, height=250):
         st.markdown(
             """
             #### Network Services & Virtualization
@@ -88,7 +77,6 @@ with col2:
             """
         )
 
-# Add a final horizontal line to conclude the section
 st.write("---")
 st.subheader("Featured Projects")
 st.write(
@@ -97,7 +85,6 @@ st.write("")
 
 proj_col1, proj_col2 = st.columns(2)
 
-# Project Card 1
 with proj_col1:
     with st.container(border=True, height=600):
         st.subheader("WGU Capstone - Network PT")
@@ -106,7 +93,6 @@ with proj_col1:
         st.image('net_images/net_7.png', width=575)
         st.link_button("View Project Details", f"{BASE_URL}Network_Projects")
 
-# Project Card 2
 with proj_col2:
     with st.container(border=True, height=600):
         st.subheader("Dual Site 3-Tier Network Lab")
@@ -118,7 +104,6 @@ with proj_col2:
 
 proj_col3, proj_col4 = st.columns(2)
 
-# Project Card 3
 with proj_col3:
     with st.container(border=True, height=600):
         st.subheader("Tic-Tac-Toe")

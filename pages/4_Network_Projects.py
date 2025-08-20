@@ -15,7 +15,7 @@ csv_path = Path(__file__).parent.parent / 'network_automation_projects_data.csv'
 st.title("Network Projects")
 st.write('___')
 
-col_count = 1
+col_count = 2
 net_df = pandas.read_csv(csv_path, sep=";")
 columns = st.columns(col_count)
 

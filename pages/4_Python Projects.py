@@ -5,7 +5,7 @@ from pathlib import Path
 st.set_page_config(
 	page_title="Python Projects",
 	page_icon='🐍',
-	layout='wide'
+	layout='wide',
 )
 
 csv_path = Path(__file__).parent.parent / 'python_projects_data.csv'
