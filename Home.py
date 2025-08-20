@@ -6,15 +6,16 @@ st.set_page_config(
     page_title="Omar Sanchez | Network & Automation Engineer",
     page_icon="💼",
     layout="wide",
-    initial_sidebar_state="auto"
+    initial_sidebar_state="collapsed"
 )
 
-col1, col_empty, col2 = st.columns([0.85, 0.1, 0.4], gap='Medium')
+col1, col_empty, col2 = st.columns([0.85, 0.1, 0.4], gap='Small')
 
 with col1:
-    with st.container(height=450, border=False):
+    with st.container(height=500, border=False):
         st.title("Omar D. Sanchez")
-        st.subheader("Network & Automation Engineer | USMC Veteran")
+        st.subheader("Network & Automation Engineer")
+        st.write("USMC Veteran | Secret Cleared")
         content = """
         I am a highly motivated and results-driven Network & Automation Engineer, bringing over nine years of dedicated experience from the demanding world of Department of Defense network infrastructures. My journey began in the U.S. Marine Corps, where I learned to build, secure, and maintain mission-critical communication systems under pressure. Today, I apply that same focus and a security-first mindset to the modern enterprise, specializing in designing resilient architectures, implementing robust security protocols, and, most importantly, automating complex operations with tools like Python and Ansible to create more intelligent and efficient networks.
         """
@@ -32,35 +33,63 @@ with col_empty:
     st.write()
 
 st.write("---")
-st.subheader("Technical Skills & Expertise")
 
-skill_col1, skill_col2, skill_col3 = st.columns(3)
 
-with skill_col1:
-    st.markdown("""
-    ##### Routing & Switching
-    - BGP, OSPF
-    - STP, VLANs, NTP, HSRP
-    - Cisco IOS, Brocade IOS
-    -IPv4, IPv6, VLSM
-    """)
+st.markdown("## Technical Skills & Expertise")
+st.write("---")
 
-with skill_col2:
-    st.markdown("""
-    ##### Automation & Programming
-    - Python, Ansible, REST APIs
-    - Git & Version Control
-    - Cisco NSO
-    """)
+# Create a two-column layout
+col1, col2 = st.columns(2, gap="medium")
 
-with skill_col3:
-    st.markdown("""
-    ##### Security & Virtualization
-    - Firewalls, VPNs, STIGs
-    - NAC (802.1x), ISE, RADIUS
-    - VMWare, Docker, GNS3
-    """)
+# Populate the first column
+with col1:
+    # Container for Routing & Switching skills
+    with st.container(border=True, height=250):
+        st.markdown(
+            """
+            #### Routing & Switching
+            * **Routing Protocols:** OSPF, BGP, HSRP, Static & Default Routing
+            * **Switching Protocols:** STP (RPVST+), EtherChannel (LACP & PAgP), VTP, VLANs & 802.1Q Trunks
+            * **IP Addressing:** IPv4, IPv6, Subnetting, VLSM
+            * **Vendor Platforms:** Cisco IOS, Brocade IOS
+            """
+        )
 
+    # Container for Network Security skills
+    with st.container(border=True, height=260):
+        st.markdown(
+            """
+            #### Network Security
+            * **Access Control:** ACLs (Standard, Extended), Port Security, NAC (802.1x), RADIUS
+            * **Threat Mitigation:** DHCP Snooping, Dynamic ARP Inspection (DAI)
+            * **Infrastructure Security:** Firewalls, VPNs, NAT/PAT
+            * **Compliance & Hardening:** STIGs
+            """
+        )
+
+# Populate the second column
+with col2:
+    # Container for Automation & Programming skills
+    with st.container(border=True, height=250):
+        st.markdown(
+            """
+            #### Automation & Programming
+            * **Languages & Tools:** Python, Ansible, Git & Version Control
+            * **Frameworks & APIs:** NETCONF, RESTCONF, REST APIs, Cisco NSO
+            """
+        )
+
+    # Container for Services & Virtualization skills
+    with st.container(border=True, height=250):
+        st.markdown(
+            """
+            #### Network Services & Virtualization
+            * **Core Services:** DHCP Server & Relay, DNS, NTP, SNMP, Syslog
+            * **Virtualization Platforms:** GNS3, VMware, Docker
+            """
+        )
+
+# Add a final horizontal line to conclude the section
 st.write("---")
 st.subheader("Featured Projects")
 st.write(

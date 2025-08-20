@@ -2,6 +2,8 @@
   <dictionary name="project">
     <words>
       <w>ccna</w>
+      <w>hsrp</w>
+      <w>restconf</w>
     </words>
   </dictionary>
 </component>
