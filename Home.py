@@ -22,7 +22,7 @@ with col1:
         st.info(content)
 
 with col2:
-    with st.container(height=450, border=False):
+    with st.container(height=500, border=False):
         profile_pic = "images/photo.jpg"
         st.image(profile_pic, caption='Omar Sanchez', width=375)
         st.write(
