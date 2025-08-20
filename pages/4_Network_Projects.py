@@ -32,4 +32,3 @@ for index, row in net_df.iterrows():
 			st.write(row['goal'])
 			st.write(f"[More Details]({row['url']})")
 
-        st.write("---")
