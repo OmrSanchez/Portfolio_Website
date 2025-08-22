@@ -27,7 +27,7 @@ with dip_col1:
             try:
                 # Open the PDF file
                 bs_doc = fitz.open(pdf_path)
-                bs_page = bs_doc.load_page(0)  # Load the first page (index 0)
+                bs_page = bs_doc.load_page(0)
 
                 # Render page to a PNG image bytes
                 bs_pix = bs_page.get_pixmap()
@@ -35,7 +35,7 @@ with dip_col1:
 
                 # Display the image in Streamlit
                 st.image(bs_img_bytes, use_container_width=True)
-                bs_doc.close()  # Close the PDF document
+                bs_doc.close()
 
             except Exception as e:
                 st.error(f"Could not render PDF content for {bs_file_name} as image: {e}")
