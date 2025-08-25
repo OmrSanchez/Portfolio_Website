@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas
 from pathlib import Path
-# from streamlit_pdf_viewer import pdf_viewer
-import fitz
+import pymupdf as fitz
 
 st.set_page_config(
     page_title="Credentials",
